@@ -31,6 +31,7 @@ namespace ClnParcial2Jdhf
                 existe.productor = programa.productor;
                 existe.fechaEstreno = programa.fechaEstreno;
                 existe.estado = programa.estado;
+                existe.clasificacion = programa.clasificacion;
                 return context.SaveChanges();
             }
         }

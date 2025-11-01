@@ -24,9 +24,15 @@ namespace CpParcial2Jdhf
             this.gbxListado = new System.Windows.Forms.GroupBox();
             this.dgvLista = new System.Windows.Forms.DataGridView();
             this.pnlAcciones = new System.Windows.Forms.Panel();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnBorrar = new System.Windows.Forms.Button();
+            this.btnCrear = new System.Windows.Forms.Button();
             this.gbxDatos = new System.Windows.Forms.GroupBox();
             this.cbxCanal = new System.Windows.Forms.ComboBox();
+            this.btnCanelar = new System.Windows.Forms.Button();
             this.dtpFechaCreacion = new System.Windows.Forms.DateTimePicker();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.txtProductor = new System.Windows.Forms.TextBox();
             this.nudDuracion = new System.Windows.Forms.NumericUpDown();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -37,13 +43,9 @@ namespace CpParcial2Jdhf
             this.lblDuracion = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblCanal = new System.Windows.Forms.Label();
-            this.btnCanelar = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnBorrar = new System.Windows.Forms.Button();
-            this.btnCrear = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.lblClasificacion = new System.Windows.Forms.Label();
+            this.cbxClasificacion = new System.Windows.Forms.ComboBox();
             this.gbxListado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.pnlAcciones.SuspendLayout();
@@ -57,7 +59,7 @@ namespace CpParcial2Jdhf
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("BubbleGum", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
@@ -69,10 +71,10 @@ namespace CpParcial2Jdhf
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("BubbleGum", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(14, 43);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(403, 18);
+            this.label2.Size = new System.Drawing.Size(337, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Buscar el programa por nombre o titulo";
             // 
@@ -88,7 +90,7 @@ namespace CpParcial2Jdhf
             // 
             this.gbxListado.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.gbxListado.Controls.Add(this.dgvLista);
-            this.gbxListado.Font = new System.Drawing.Font("BubbleGum", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxListado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxListado.Location = new System.Drawing.Point(12, 85);
             this.gbxListado.Name = "gbxListado";
             this.gbxListado.Size = new System.Drawing.Size(776, 182);
@@ -120,171 +122,6 @@ namespace CpParcial2Jdhf
             this.pnlAcciones.Name = "pnlAcciones";
             this.pnlAcciones.Size = new System.Drawing.Size(757, 51);
             this.pnlAcciones.TabIndex = 7;
-            // 
-            // gbxDatos
-            // 
-            this.gbxDatos.Controls.Add(this.cbxCanal);
-            this.gbxDatos.Controls.Add(this.btnCanelar);
-            this.gbxDatos.Controls.Add(this.dtpFechaCreacion);
-            this.gbxDatos.Controls.Add(this.btnGuardar);
-            this.gbxDatos.Controls.Add(this.txtProductor);
-            this.gbxDatos.Controls.Add(this.nudDuracion);
-            this.gbxDatos.Controls.Add(this.textBox1);
-            this.gbxDatos.Controls.Add(this.txtTitulo);
-            this.gbxDatos.Controls.Add(this.lblFechaCreacion);
-            this.gbxDatos.Controls.Add(this.lblDescripcion);
-            this.gbxDatos.Controls.Add(this.lblProductor);
-            this.gbxDatos.Controls.Add(this.lblDuracion);
-            this.gbxDatos.Controls.Add(this.lblTitulo);
-            this.gbxDatos.Controls.Add(this.lblCanal);
-            this.gbxDatos.Font = new System.Drawing.Font("BubbleGum", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxDatos.Location = new System.Drawing.Point(12, 330);
-            this.gbxDatos.Name = "gbxDatos";
-            this.gbxDatos.Size = new System.Drawing.Size(776, 158);
-            this.gbxDatos.TabIndex = 12;
-            this.gbxDatos.TabStop = false;
-            this.gbxDatos.Text = "Introducir datos";
-            // 
-            // cbxCanal
-            // 
-            this.cbxCanal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxCanal.FormattingEnabled = true;
-            this.cbxCanal.Location = new System.Drawing.Point(158, 21);
-            this.cbxCanal.Name = "cbxCanal";
-            this.cbxCanal.Size = new System.Drawing.Size(184, 23);
-            this.cbxCanal.TabIndex = 22;
-            // 
-            // dtpFechaCreacion
-            // 
-            this.dtpFechaCreacion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaCreacion.Location = new System.Drawing.Point(503, 56);
-            this.dtpFechaCreacion.Name = "dtpFechaCreacion";
-            this.dtpFechaCreacion.Size = new System.Drawing.Size(267, 23);
-            this.dtpFechaCreacion.TabIndex = 19;
-            // 
-            // txtProductor
-            // 
-            this.txtProductor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtProductor.Location = new System.Drawing.Point(634, 16);
-            this.txtProductor.MaxLength = 20;
-            this.txtProductor.Name = "txtProductor";
-            this.txtProductor.Size = new System.Drawing.Size(136, 23);
-            this.txtProductor.TabIndex = 18;
-            // 
-            // nudDuracion
-            // 
-            this.nudDuracion.Location = new System.Drawing.Point(426, 21);
-            this.nudDuracion.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.nudDuracion.Name = "nudDuracion";
-            this.nudDuracion.Size = new System.Drawing.Size(102, 23);
-            this.nudDuracion.TabIndex = 17;
-            // 
-            // textBox1
-            // 
-            this.textBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox1.Location = new System.Drawing.Point(158, 88);
-            this.textBox1.MaxLength = 20;
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(184, 61);
-            this.textBox1.TabIndex = 16;
-            // 
-            // txtTitulo
-            // 
-            this.txtTitulo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtTitulo.Location = new System.Drawing.Point(158, 53);
-            this.txtTitulo.MaxLength = 20;
-            this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.Size = new System.Drawing.Size(184, 23);
-            this.txtTitulo.TabIndex = 15;
-            // 
-            // lblFechaCreacion
-            // 
-            this.lblFechaCreacion.AutoSize = true;
-            this.lblFechaCreacion.Font = new System.Drawing.Font("BubbleGum", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaCreacion.Location = new System.Drawing.Point(361, 61);
-            this.lblFechaCreacion.Name = "lblFechaCreacion";
-            this.lblFechaCreacion.Size = new System.Drawing.Size(129, 15);
-            this.lblFechaCreacion.TabIndex = 13;
-            this.lblFechaCreacion.Text = "Fecha Creacion:";
-            // 
-            // lblDescripcion
-            // 
-            this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(16, 91);
-            this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(101, 15);
-            this.lblDescripcion.TabIndex = 12;
-            this.lblDescripcion.Text = "Descripcion:";
-            // 
-            // lblProductor
-            // 
-            this.lblProductor.AutoSize = true;
-            this.lblProductor.Location = new System.Drawing.Point(534, 24);
-            this.lblProductor.Name = "lblProductor";
-            this.lblProductor.Size = new System.Drawing.Size(94, 15);
-            this.lblProductor.TabIndex = 11;
-            this.lblProductor.Text = "Productor:";
-            // 
-            // lblDuracion
-            // 
-            this.lblDuracion.AutoSize = true;
-            this.lblDuracion.Location = new System.Drawing.Point(348, 24);
-            this.lblDuracion.Name = "lblDuracion";
-            this.lblDuracion.Size = new System.Drawing.Size(83, 15);
-            this.lblDuracion.TabIndex = 10;
-            this.lblDuracion.Text = "Duracion:";
-            // 
-            // lblTitulo
-            // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Location = new System.Drawing.Point(16, 56);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(62, 15);
-            this.lblTitulo.TabIndex = 9;
-            this.lblTitulo.Text = "Titulo:";
-            // 
-            // lblCanal
-            // 
-            this.lblCanal.AutoSize = true;
-            this.lblCanal.Location = new System.Drawing.Point(16, 24);
-            this.lblCanal.Name = "lblCanal";
-            this.lblCanal.Size = new System.Drawing.Size(147, 15);
-            this.lblCanal.TabIndex = 8;
-            this.lblCanal.Text = "Nombre del Canal:";
-            // 
-            // btnCanelar
-            // 
-            this.btnCanelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.btnCanelar.Image = global::CpParcial2Jdhf.Properties.Resources.cancel;
-            this.btnCanelar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnCanelar.Location = new System.Drawing.Point(572, 88);
-            this.btnCanelar.Name = "btnCanelar";
-            this.btnCanelar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnCanelar.Size = new System.Drawing.Size(73, 61);
-            this.btnCanelar.TabIndex = 21;
-            this.btnCanelar.Text = "Cancelar";
-            this.btnCanelar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCanelar.UseVisualStyleBackColor = true;
-            this.btnCanelar.Click += new System.EventHandler(this.btnCanelar_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.btnGuardar.Image = global::CpParcial2Jdhf.Properties.Resources.save;
-            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnGuardar.Location = new System.Drawing.Point(470, 87);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnGuardar.Size = new System.Drawing.Size(73, 62);
-            this.btnGuardar.TabIndex = 20;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnGuardar.UseVisualStyleBackColor = true;
             // 
             // btnCancelar
             // 
@@ -346,6 +183,177 @@ namespace CpParcial2Jdhf
             this.btnCrear.UseVisualStyleBackColor = true;
             this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
+            // gbxDatos
+            // 
+            this.gbxDatos.Controls.Add(this.cbxClasificacion);
+            this.gbxDatos.Controls.Add(this.lblClasificacion);
+            this.gbxDatos.Controls.Add(this.cbxCanal);
+            this.gbxDatos.Controls.Add(this.btnCanelar);
+            this.gbxDatos.Controls.Add(this.dtpFechaCreacion);
+            this.gbxDatos.Controls.Add(this.btnGuardar);
+            this.gbxDatos.Controls.Add(this.txtProductor);
+            this.gbxDatos.Controls.Add(this.nudDuracion);
+            this.gbxDatos.Controls.Add(this.textBox1);
+            this.gbxDatos.Controls.Add(this.txtTitulo);
+            this.gbxDatos.Controls.Add(this.lblFechaCreacion);
+            this.gbxDatos.Controls.Add(this.lblDescripcion);
+            this.gbxDatos.Controls.Add(this.lblProductor);
+            this.gbxDatos.Controls.Add(this.lblDuracion);
+            this.gbxDatos.Controls.Add(this.lblTitulo);
+            this.gbxDatos.Controls.Add(this.lblCanal);
+            this.gbxDatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxDatos.Location = new System.Drawing.Point(12, 330);
+            this.gbxDatos.Name = "gbxDatos";
+            this.gbxDatos.Size = new System.Drawing.Size(776, 158);
+            this.gbxDatos.TabIndex = 12;
+            this.gbxDatos.TabStop = false;
+            this.gbxDatos.Text = "Introducir datos";
+            // 
+            // cbxCanal
+            // 
+            this.cbxCanal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxCanal.FormattingEnabled = true;
+            this.cbxCanal.Items.AddRange(new object[] {
+            "Animal Planet",
+            "Tyc Sports\t",
+            "Cartoon Network"});
+            this.cbxCanal.Location = new System.Drawing.Point(158, 21);
+            this.cbxCanal.Name = "cbxCanal";
+            this.cbxCanal.Size = new System.Drawing.Size(184, 26);
+            this.cbxCanal.TabIndex = 22;
+            // 
+            // btnCanelar
+            // 
+            this.btnCanelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.btnCanelar.Image = global::CpParcial2Jdhf.Properties.Resources.cancel;
+            this.btnCanelar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnCanelar.Location = new System.Drawing.Point(651, 86);
+            this.btnCanelar.Name = "btnCanelar";
+            this.btnCanelar.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnCanelar.Size = new System.Drawing.Size(73, 61);
+            this.btnCanelar.TabIndex = 21;
+            this.btnCanelar.Text = "Cancelar";
+            this.btnCanelar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnCanelar.UseVisualStyleBackColor = true;
+            this.btnCanelar.Click += new System.EventHandler(this.btnCanelar_Click);
+            // 
+            // dtpFechaCreacion
+            // 
+            this.dtpFechaCreacion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaCreacion.Location = new System.Drawing.Point(503, 56);
+            this.dtpFechaCreacion.Name = "dtpFechaCreacion";
+            this.dtpFechaCreacion.Size = new System.Drawing.Size(267, 24);
+            this.dtpFechaCreacion.TabIndex = 19;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.btnGuardar.Image = global::CpParcial2Jdhf.Properties.Resources.save;
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnGuardar.Location = new System.Drawing.Point(559, 85);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnGuardar.Size = new System.Drawing.Size(73, 62);
+            this.btnGuardar.TabIndex = 20;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            // 
+            // txtProductor
+            // 
+            this.txtProductor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtProductor.Location = new System.Drawing.Point(618, 18);
+            this.txtProductor.MaxLength = 20;
+            this.txtProductor.Name = "txtProductor";
+            this.txtProductor.Size = new System.Drawing.Size(136, 24);
+            this.txtProductor.TabIndex = 18;
+            // 
+            // nudDuracion
+            // 
+            this.nudDuracion.Location = new System.Drawing.Point(426, 21);
+            this.nudDuracion.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.nudDuracion.Name = "nudDuracion";
+            this.nudDuracion.Size = new System.Drawing.Size(102, 24);
+            this.nudDuracion.TabIndex = 17;
+            // 
+            // textBox1
+            // 
+            this.textBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.textBox1.Location = new System.Drawing.Point(158, 88);
+            this.textBox1.MaxLength = 20;
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(184, 61);
+            this.textBox1.TabIndex = 16;
+            // 
+            // txtTitulo
+            // 
+            this.txtTitulo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtTitulo.Location = new System.Drawing.Point(158, 53);
+            this.txtTitulo.MaxLength = 20;
+            this.txtTitulo.Name = "txtTitulo";
+            this.txtTitulo.Size = new System.Drawing.Size(184, 24);
+            this.txtTitulo.TabIndex = 15;
+            // 
+            // lblFechaCreacion
+            // 
+            this.lblFechaCreacion.AutoSize = true;
+            this.lblFechaCreacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaCreacion.Location = new System.Drawing.Point(348, 61);
+            this.lblFechaCreacion.Name = "lblFechaCreacion";
+            this.lblFechaCreacion.Size = new System.Drawing.Size(117, 18);
+            this.lblFechaCreacion.TabIndex = 13;
+            this.lblFechaCreacion.Text = "Fecha Creacion:";
+            // 
+            // lblDescripcion
+            // 
+            this.lblDescripcion.AutoSize = true;
+            this.lblDescripcion.Location = new System.Drawing.Point(16, 91);
+            this.lblDescripcion.Name = "lblDescripcion";
+            this.lblDescripcion.Size = new System.Drawing.Size(91, 18);
+            this.lblDescripcion.TabIndex = 12;
+            this.lblDescripcion.Text = "Descripcion:";
+            // 
+            // lblProductor
+            // 
+            this.lblProductor.AutoSize = true;
+            this.lblProductor.Location = new System.Drawing.Point(534, 24);
+            this.lblProductor.Name = "lblProductor";
+            this.lblProductor.Size = new System.Drawing.Size(78, 18);
+            this.lblProductor.TabIndex = 11;
+            this.lblProductor.Text = "Productor:";
+            // 
+            // lblDuracion
+            // 
+            this.lblDuracion.AutoSize = true;
+            this.lblDuracion.Location = new System.Drawing.Point(348, 24);
+            this.lblDuracion.Name = "lblDuracion";
+            this.lblDuracion.Size = new System.Drawing.Size(72, 18);
+            this.lblDuracion.TabIndex = 10;
+            this.lblDuracion.Text = "Duracion:";
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Location = new System.Drawing.Point(16, 56);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(48, 18);
+            this.lblTitulo.TabIndex = 9;
+            this.lblTitulo.Text = "Titulo:";
+            // 
+            // lblCanal
+            // 
+            this.lblCanal.AutoSize = true;
+            this.lblCanal.Location = new System.Drawing.Point(16, 24);
+            this.lblCanal.Name = "lblCanal";
+            this.lblCanal.Size = new System.Drawing.Size(131, 18);
+            this.lblCanal.TabIndex = 8;
+            this.lblCanal.Text = "Nombre del Canal:";
+            // 
             // btnBuscar
             // 
             this.btnBuscar.Image = global::CpParcial2Jdhf.Properties.Resources.search;
@@ -358,6 +366,28 @@ namespace CpParcial2Jdhf
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // lblClasificacion
+            // 
+            this.lblClasificacion.AutoSize = true;
+            this.lblClasificacion.Location = new System.Drawing.Point(348, 109);
+            this.lblClasificacion.Name = "lblClasificacion";
+            this.lblClasificacion.Size = new System.Drawing.Size(96, 18);
+            this.lblClasificacion.TabIndex = 23;
+            this.lblClasificacion.Text = "Clasificación:";
+            this.lblClasificacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // cbxClasificacion
+            // 
+            this.cbxClasificacion.FormattingEnabled = true;
+            this.cbxClasificacion.Items.AddRange(new object[] {
+            "13+",
+            "16+",
+            "18+"});
+            this.cbxClasificacion.Location = new System.Drawing.Point(448, 106);
+            this.cbxClasificacion.Name = "cbxClasificacion";
+            this.cbxClasificacion.Size = new System.Drawing.Size(65, 26);
+            this.cbxClasificacion.TabIndex = 24;
             // 
             // FrmPrograma
             // 
@@ -417,5 +447,7 @@ namespace CpParcial2Jdhf
         private System.Windows.Forms.Label lblDuracion;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblCanal;
+        private Label lblClasificacion;
+        private ComboBox cbxClasificacion;
     }
 }

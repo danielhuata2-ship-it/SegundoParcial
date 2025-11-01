@@ -30,6 +30,7 @@ namespace CpParcial2Jdhf
             if (dgvLista.Columns["duracion"] != null) dgvLista.Columns["duracion"].HeaderText = "Duración";
             if (dgvLista.Columns["productor"] != null) dgvLista.Columns["productor"].HeaderText = "Productor";
             if (dgvLista.Columns["fechaEstreno"] != null) dgvLista.Columns["fechaEstreno"].HeaderText = "Fecha de Estreno";
+            if (dgvLista.Columns["clasificacion"] != null) dgvLista.Columns["clasificacion"].HeaderText = "Clasificaciòn";
 
             if (lista.Count > 0 && dgvLista.Columns["titulo"] != null)
                 dgvLista.CurrentCell = dgvLista.Rows[0].Cells["titulo"];

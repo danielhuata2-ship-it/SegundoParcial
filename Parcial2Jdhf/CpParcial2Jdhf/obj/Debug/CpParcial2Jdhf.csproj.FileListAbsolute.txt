@@ -20,3 +20,25 @@ E:\Daniel dou\Mio\SIS 457 fundamentos\2doParcial\Parcial\Parcial2Jdhf\CpParcial2
 E:\Daniel dou\Mio\SIS 457 fundamentos\2doParcial\Parcial\Parcial2Jdhf\CpParcial2Jdhf\obj\Debug\CpParcial2Jdhf.exe
 E:\Daniel dou\Mio\SIS 457 fundamentos\2doParcial\Parcial\Parcial2Jdhf\CpParcial2Jdhf\obj\Debug\CpParcial2Jdhf.pdb
 E:\Daniel dou\Mio\SIS 457 fundamentos\2doParcial\Parcial\Parcial2Jdhf\CpParcial2Jdhf\obj\Debug\CpParcial2Jdhf.exe.config
+C:\de daniel\SIS457\exa2doParciasl\SegundoParcial\Parcial2Jdhf\CpParcial2Jdhf\bin\Debug\CpParcial2Jdhf.exe.config
+C:\de daniel\SIS457\exa2doParciasl\SegundoParcial\Parcial2Jdhf\CpParcial2Jdhf\bin\Debug\CpParcial2Jdhf.exe
+C:\de daniel\SIS457\exa2doParciasl\SegundoParcial\Parcial2Jdhf\CpParcial2Jdhf\bin\Debug\CpParcial2Jdhf.pdb
+C:\de daniel\SIS457\exa2doParciasl\SegundoParcial\Parcial2Jdhf\CpParcial2Jdhf\bin\Debug\CadParcial2Jdhf.dll
+C:\de daniel\SIS457\exa2doParciasl\SegundoParcial\Parcial2Jdhf\CpParcial2Jdhf\bin\Debug\ClnParcial2Jdhf.dll
+C:\de daniel\SIS457\exa2doParciasl\SegundoParcial\Parcial2Jdhf\CpParcial2Jdhf\bin\Debug\EntityFramework.dll
+C:\de daniel\SIS457\exa2doParciasl\SegundoParcial\Parcial2Jdhf\CpParcial2Jdhf\bin\Debug\EntityFramework.SqlServer.dll
+C:\de daniel\SIS457\exa2doParciasl\SegundoParcial\Parcial2Jdhf\CpParcial2Jdhf\bin\Debug\CadParcial2Jdhf.pdb
+C:\de daniel\SIS457\exa2doParciasl\SegundoParcial\Parcial2Jdhf\CpParcial2Jdhf\bin\Debug\CadParcial2Jdhf.dll.config
+C:\de daniel\SIS457\exa2doParciasl\SegundoParcial\Parcial2Jdhf\CpParcial2Jdhf\bin\Debug\ClnParcial2Jdhf.pdb
+C:\de daniel\SIS457\exa2doParciasl\SegundoParcial\Parcial2Jdhf\CpParcial2Jdhf\bin\Debug\ClnParcial2Jdhf.dll.config
+C:\de daniel\SIS457\exa2doParciasl\SegundoParcial\Parcial2Jdhf\CpParcial2Jdhf\bin\Debug\EntityFramework.xml
+C:\de daniel\SIS457\exa2doParciasl\SegundoParcial\Parcial2Jdhf\CpParcial2Jdhf\bin\Debug\EntityFramework.SqlServer.xml
+C:\de daniel\SIS457\exa2doParciasl\SegundoParcial\Parcial2Jdhf\CpParcial2Jdhf\obj\Debug\CpParcial2Jdhf.csproj.AssemblyReference.cache
+C:\de daniel\SIS457\exa2doParciasl\SegundoParcial\Parcial2Jdhf\CpParcial2Jdhf\obj\Debug\CpParcial2Jdhf.exe.config
+C:\de daniel\SIS457\exa2doParciasl\SegundoParcial\Parcial2Jdhf\CpParcial2Jdhf\obj\Debug\CpParcial2Jdhf.FrmPrograma.resources
+C:\de daniel\SIS457\exa2doParciasl\SegundoParcial\Parcial2Jdhf\CpParcial2Jdhf\obj\Debug\CpParcial2Jdhf.Properties.Resources.resources
+C:\de daniel\SIS457\exa2doParciasl\SegundoParcial\Parcial2Jdhf\CpParcial2Jdhf\obj\Debug\CpParcial2Jdhf.csproj.GenerateResource.cache
+C:\de daniel\SIS457\exa2doParciasl\SegundoParcial\Parcial2Jdhf\CpParcial2Jdhf\obj\Debug\CpParcial2Jdhf.csproj.CoreCompileInputs.cache
+C:\de daniel\SIS457\exa2doParciasl\SegundoParcial\Parcial2Jdhf\CpParcial2Jdhf\obj\Debug\CpParcia.FF5655A3.Up2Date
+C:\de daniel\SIS457\exa2doParciasl\SegundoParcial\Parcial2Jdhf\CpParcial2Jdhf\obj\Debug\CpParcial2Jdhf.exe
+C:\de daniel\SIS457\exa2doParciasl\SegundoParcial\Parcial2Jdhf\CpParcial2Jdhf\obj\Debug\CpParcial2Jdhf.pdb

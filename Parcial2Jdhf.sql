@@ -32,7 +32,8 @@ CREATE TABLE Programa(
 	duracion INT NOT NULL,
 	productor VARCHAR(100) NOT NULL,
 	fechaEstreno DATE NOT NULL,
-	estado SMALLINT NOT NULL DEFAULT(1)
+	estado SMALLINT NOT NULL DEFAULT(1),
+	clasificacion VARCHAR (15) NOT NULL,
 	CONSTRAINT fk_Programa_Canal FOREIGN KEY (idCanal) REFERENCES Canal(id)
 )
 
@@ -58,10 +59,10 @@ GO
 CREATE PROC paProgramaListar @parametro VARCHAR(50)
 AS
 BEGIN
-    SELECT p.id, p.idCanal, p.titulo, p.descripcion, p.duracion, p.productor, p.fechaEstreno, p.estado
+    SELECT p.id, p.idCanal, p.titulo, p.descripcion, p.duracion, p.productor, p.fechaEstreno, p.estado, p.clasificacion
     FROM Programa p
     WHERE p.estado > -1 
-      AND (p.titulo + p.descripcion + p.productor) LIKE '%' + REPLACE(@parametro, ' ', '%') + '%'
+      AND (p.titulo + p.descripcion + p.productor + p.clasificacion) LIKE '%' + REPLACE(@parametro, ' ', '%') + '%'
     ORDER BY p.estado DESC, p.titulo ASC;
 END;
 GO
@@ -73,7 +74,8 @@ INSERT INTO Canal (nombre, frecuencia) VALUES
 ('Tyc Sports', '101.2 FM'),
 ('Cartoon Network', '102.3 FM');
 
-INSERT INTO Programa (idCanal, titulo, descripcion, duracion, productor, fechaEstreno) VALUES
-(1, 'Planet Earth', 'Una serie documental sobre el mundo natural', 60, 'BBC Studios', '2006-03-05'),
-(2, 'Futbol Argentino', 'Retransmisión en directo de los partidos de fútbol argentino.', 120, 'Tyc Sports Productions', '2020-08-15'),
-(3, 'Adventure Time', 'Una serie animada sobre las aventuras de Finn y Jake.', 30, 'Cartoon Network Studios', '2010-04-05');
+INSERT INTO Programa (idCanal, titulo, descripcion, duracion, productor, fechaEstreno, clasificacion) VALUES
+(1, 'Planet Earth', 'Una serie documental sobre el mundo natural', 60, 'BBC Studios', '2006-03-05', '13+'),
+(2, 'Futbol Argentino', 'Retransmisión en directo de los partidos de fútbol argentino.', 120, 'Tyc Sports Productions', '2020-08-15', '16+'),
+(3, 'Adventure Time', 'Una serie animada sobre las aventuras de Finn y Jake.', 30, 'Cartoon Network Studios', '2010-04-05', '18+');
+
